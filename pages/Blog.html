@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating Blog</title>
+	<meta name="description" content="Just basic html">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="yukesh gharti magar">
+	<style type="text/css">
+		.list_style{
+			display: inline;
+			font-family: roboto;
+			font-size: 20px;
+			margin: 10px;
+		}
+		.list_a_style{
+			text-decoration: none;
+			padding-left: 15px;
+			padding-right: 15px;
+			color: white;
+			border: 3px solid white;
+			background-color: black;
+		}
+		a:hover{
+			background-color: white;
+			color: black;
+		}
+		.selected_list_a_style{
+			text-decoration: none;
+			padding-left: 15px;
+			padding-right: 15px;
+			color: black;
+			border: 3px solid black;
+			background-color: white;
+		}
+		.imag{
+			float: left;
+			width: 15%;
+			padding-left: 40px;
+			padding-top: 20px;
+		}
+.imag #pic{
+			width: 100%;
+			height: 60px;
+		}
+		#slideimage{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<!--giving background color for the body-->
+<body style="background-color:aqua;width:100%;height:100%">
+
+	<!--creating a wrapper class for the elements-->
+	<div style="background-color:red;width: 90%;height: 900px;margin: auto;">
+
+		<!--creating a header tag inside the wrapper class-->
+		<header style="background-color:blue;width:100%;height:150px;">
+
+			<!--creating  a div tag inside the header tag for giving the title-->
+			<div style="background-color:black;width:100%;height:100px">
+				<h2 style="color:white;font-family:roboto;text-align: center;padding-top: 40px;font-size: 30px;">BLOG OF TECHNOLOGY</h2>
+			</div>
+
+
+			<!--creating a navigation bar inside the header tag-->
+			<nav style="background-color:black;width:100%;height:50px;text-align: center;border-top: 2px solid white;">
+				
+				<!--creating a div tag inside the navigation bar-->
+				<div style="background-color:black;width:70%;height:50px;margin: auto;">
+					<div style="padding-top:12px;height:38px">
+					<ul style="list-style-type:none;margin: 0px;padding:0px">
+						<li class="list_style"><a href="../index.html" class="list_a_style">HOME</a></li>
+						<li class="list_style"><a href="products.html" class="list_a_style">PRODUCTS</a></li>
+						<li class="list_style"><a href="#" class="selected_list_a_style">BLOGS</a></li>
+						<li class="list_style"><a href="Research.html" class="list_a_style">RESEARCH</a></li>
+						<li class="list_style"><a href="ContactUs.html" class="list_a_style">CONTACT US</a></li>
+					</ul>	
+				</div>
+				</div>
+			</nav>	
+		</header>
+
+
+
+
+		<!--creating a main tag inside the wrapper class-->
+		<main style="background-color:black;width:100%;height:600px;border-top: 2px solid white;">
+
+			<!--creating a div tag inside the main tag-->
+			<div style="background-color:black;width:98%;height:600px;margin: auto;border-left:2px solid white;border-right: 2px solid white;">
+
+				<!--creating a sub-division tag inside the div tag of main tag-->
+				<div style="background-color:orange;width:100%;height:400px" >
+					<div style="background-color:yellow;width:100%;height:400px" >
+						<!--putting image inside the div tag of  main tag-->
+						<img src="../images/tim-alex-1i-P178kxHQ-unsplash.jpg" width="100%" height="100%" id="slideimage">
+						<script type="text/javascript">
+						var images=['../images/tim-alex-1i-P178kxHQ-unsplash.jpg','../images/matt-ridley-H-LIL57PHCc-unsplash.jpg','../images/sincerely-media-CXYPfveiuis-unsplash (2).jpg','../images/varad-parulekar-Gls5DB9lk6s-unsplash.jpg'];
+						var i=0;
+						
+						function slides(){
+							document.getElementById('slideimage').src=images[i];
+							if(i<(images.length-1))
+								i++;
+							else
+								i=0;
+						}
+						setInterval(slides,2000);
+					</script>
+					</div>
+				</div>
+
+				<!--creating a sub-division tag inside the div tag of main tag-->
+				<div style="background-color: black;width: 100%;height: 200px;">
+					<h3 style="text-align: center;color: white;font-family: arial;text-decoration:underline">HOW TECHNOLOGY HAS AFFECTED LIFE</h3>
+					<p style="color: white;font-family: roboto;text-align: center;padding: 2px;margin: 2px;">Technology is everywhere-in-almost every part of peoples lifes.About the technology which has affected the life of students.They have to spend their time and money in online which makes them very shy.Technology has plays a big role in students life.No one can escape from a technology in the daily life.Due to the technology the students are becoming bored in their life with stress and can't concentrate on the other activities.They are giving the full time on online so they are becoming changing day by day.They may be suffer from many things which can damage their brain make them unconcious and uncomfortable.Due to technology they have to give main time for their customers who make order in their website.This is done day by day show by this things also makes the online students hampered in their daily life.Technology has drastically reduced the students free time so they have no much time in spending others families and friends.Due to this technology their may be physical issues,such as eyestrain and difficulty in focusing on important tasks.It may harm to serious health conditions,such as depression in students life.</p>
+				</div>	
+			</div>	
+		</main>
+
+
+
+
+		<!--creating a footer tag inside the wrapper class-->
+		<footer style="background-color:yellow;width: 100%;height: 150px;border-top: 2px solid white;">
+			  <!--creating a div tag inside a footer tag-->
+			<div style="background-color: black;width: 100%;height: 150px;">
+				<!--creating a div tag inside a div tag of footer tag-->
+				<div style="background-color:black;width: 100%;height: 100px;">
+					<!--creating a div tag inside a  div tag of footer tag-->
+					<div style="background-color:black;width:50%;height: 100px;margin: auto;">
+						<!--creating a sub div tag inside a div tag-->
+						<div class="imag">
+                   		    <img id="pic" src="../images/icons8-facebook-48.png" >	
+                   		</div>
+
+                         <!--creating a sub div tag inside a div tag-->
+                   		<div class="imag">
+                   		    <img id="pic" src="../images/icons8-google-48.png">
+                   		</div>
+                          
+                          <!--creating a sub div tag inside a div tag-->
+                          <div class="imag" >
+                   		     <img id="pic" src="../images/icons8-instagram-48.png">	
+                   		</div>
+
+                        <!--creating a sub div tag inside a div tag-->
+                   		<div class="imag" >
+                   		    <img id="pic" src="../images/icons8-twitter-48.png" >
+                   		</div>	
+					</div>
+
+					<!--creating a sub-div tag inside the div tag of footer-->
+					<div style="background-color:black;width: 100%;height: 50px;text-align: center;">
+						<p style="color:white;font-size:20px;font-family: arial">&copy;|copyright islington college</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
